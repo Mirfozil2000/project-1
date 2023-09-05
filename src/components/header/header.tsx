@@ -25,7 +25,7 @@ const Header = () => {
     <header className={`${scrolled && 'bg-[#E10856] shadow-lg'}`}>
         <div className="flex items-center space-x-2 md:space-x-10">
             <Image src={'/logo.svg'} alt="logo" className="cursor-pointer" width={56} height={56} />
-            <ul className="space-x-4 md:flex hidden">
+            <ul className="hidden space-x-4 md:flex">
                 <li className="navLink">Home</li>
                 <li className="navLink">Movies</li>
                 <li className="navLink">TV Shows</li>
@@ -34,12 +34,12 @@ const Header = () => {
             </ul>
         </div>
         <div className="flex items-center space-x-4 text-sm font-light">
-                <AiOutlineSearch className='h-6 w-6 cursor-pointer' />
+                <AiOutlineSearch className='w-6 h-6 cursor-pointer' />
                 <p className="hidden lg:inline">Kids</p>
-                <BiBellMinus className='h-6 w-6 cursor-pointer'  />
-                <VscAccount className='h-6 w-6 cursor-pointer' />
+                <BiBellMinus className='w-6 h-6 cursor-pointer'  />
+                {/* <VscAccount className='w-6 h-6 cursor-pointer' /> */}
                 <Link href={'/account'}>
-                <AiOutlineUser className='h-6 w-6 cursor-pointer' />
+                <AiOutlineUser className='w-6 h-6 cursor-pointer' />
                 </Link>
             </div>
     </header>
